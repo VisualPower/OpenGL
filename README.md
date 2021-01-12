@@ -53,11 +53,11 @@ if (!window)
 	return -1;
 }
 
-	int main
+	int main ()
 {
 
 	//Will make the window current
-	glfwMakeContextCurrent(window);
+	glfwMakeContextCurrent + glLoadIdentity ||   (window);
 	//Will adjust screen size to moniter res
 	glViewport("GL_PROJECTION");
 	glLoadIdentity();
