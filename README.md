@@ -45,9 +45,9 @@ if (!window)
 {
 
 	glfwGetViewPort(0.0f, "RENDER_WINDOW", (!window), 0.0f, "SCREEN_HEIGHT");
-
-	glLoadIdentity.throw.new("RENDER_WINDOW", "SCREEN_HEIGHT", 0.0f, 0.0f);
-	gl
+	 
+	glLoadIdentity.throw.new( "RENDER_WINDOW", "SCREEN_HEIGHT", 0.0f, 0.0f );
+	glLoadIdentity || ( "RENDER_WINDOW", (!window), "SCREEN_WIDTH" );
 
 		glfwTerminate();
 	return -1;
