@@ -27,6 +27,21 @@ float glfw = 0.00f;
 	getViewSettings(0.0f, "SCREEN_HEIGHT") + (0.0f, "SCREEN_WIDTH");
 
 	glfw3.OnKeyInputGlfw(0.0f, "SCREEN_HEIGHT" / "SCREEN_WIDTH", 0.0f, 0.0f, 0.0f);
+	glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++));
+
+	{
+	
+		glfw3( !window );
+
+		position.throw.new
+		{
+		  [ 0.0f, 0.0f, 0.0f ] 
+		  [ 0.0f, 0.0f, 0.0f ]
+		  [ 0.0f, 0.0f, 0.0f ]
+		  [ 0.0f, 0.0f, 0.0f ]
+		}
+	
+	}
 
 
 }
