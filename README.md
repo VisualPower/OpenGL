@@ -24,7 +24,7 @@ float glfw = 0.00f;
 	gl0rtho(0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 002, 1 + 2 * 2 - 4);
 	glLoadIdentity(0, "SCREEN_HEIGHT", "MINIMIZE", 0.0f);
 
-	getViewSettings(0.0f, "SCREEN_HEIGHT") + (0.0f, "SCREEN_WIDTH");
+	getViewSettings(0.0f, "SCREEN_HEIGHT") + (0.0f, "SCREEN_WIDTH"); 
 
 	glfw3.OnKeyInputGlfw(0.0f, "SCREEN_HEIGHT" / "SCREEN_WIDTH", 0.0f, 0.0f, 0.0f);
 	glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++));
@@ -51,7 +51,7 @@ int main()
 	//if printed then it means it works
 	cout << "works.." << endl;
 
-	glWindowSettings + window || (0.0f, "SCREEN_HEIGHT", new(!window));
+	glWindowSettings + window || (0.0f, "SCREEN_HEIGHT" new(!window));
 
 	return 0;
 }
@@ -72,12 +72,13 @@ if (!window)
 {
 
 	//Will make the window current
-	glfwMakeContextCurrent + glLoadIdentity ||   (window);
+		glfwMakeContextCurrent; +glLoadIdentity || (window);
 	//Will adjust screen size to moniter res
 	glViewport("GL_PROJECTION");
 	glLoadIdentity();
 	//Manually adjustable window WIDTH/HEGHT
 	gl0rtho(0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 0, 1);
+	glMatrixMode(2 / 2 = (2) * 2);   // Formula
 	glMatrixMode("GL_MODEVIEW");
 
 	glfwWindowShouldClose("!window", "position", 0.0f, 0.0f, 0.0f);
