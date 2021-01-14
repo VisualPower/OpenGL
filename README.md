@@ -121,6 +121,7 @@ while (!glfwWindowShouldClose(window))
 	glfwInput("GL_GLFW_GETKEY_BUFFER_BIT");
 
 	glfwViewPostRender(throw.new(!"window"))
+	2 *(2) || glfwViewPostRender(throw.new, 0);
 
 
 		int main
@@ -132,5 +133,7 @@ while (!glfwWindowShouldClose(window))
 	glfw3(throw.new + *("SCREEN_WIDTH", "SCREEN_HEIGHT", 0);
 	}
 }
+
+// Newest Update 0.0.1
 
 return 0;
