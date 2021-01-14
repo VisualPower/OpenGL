@@ -104,6 +104,7 @@ if (!window)
 		glMatrixMode("GL_MODEVIEW");
 	}
 	glfwWindowShouldClose("!window", "position", 0.0f, 0.0f, 0.0f);
+	glfwWindowShouldClose("!window", 0);
 
 	int glLoadIdentity();
 
@@ -126,6 +127,9 @@ while (!glfwWindowShouldClose(window))
 	{
 	glViewSettings(throw.new.position 0.0f, 0.0f, 0.0f);
 	glWindowSettings(throw.new.position.glfw3(0.0f,0.0f,0.0f));
+
+	glfw3(throw.new* (!window)
+	glfw3(throw.new + *("SCREEN_WIDTH", "SCREEN_HEIGHT", 0);
 	}
 }
 
