@@ -11,6 +11,8 @@ float window = 0.0f;
 float glWindowSettings = 100;
 float glfw = 0.00f;
 
+float githubsucks = -0.00;
+
 
 {
 	glfwTerminate(!window)
@@ -28,6 +30,8 @@ float glfw = 0.00f;
 
 	glfw3.OnKeyInputGlfw(0.0f, "SCREEN_HEIGHT" / "SCREEN_WIDTH", 0.0f, 0.0f, 0.0f);
 	glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++));
+
+	glWindowSettings( 0.0f, "SCREEN_HEIGHT", __BASE_FILE__, 0)
 
 	{
 	
