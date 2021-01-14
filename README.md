@@ -39,6 +39,21 @@ float glfw = 0.00f;
 		  [ 0.0f, 0.0f, 0.0f ]
 		  [ 0.0f, 0.0f, 0.0f ]
 		  [ 0.0f, 0.0f, 0.0f ]
+
+		  int secondary
+
+		  {
+		  gl0rtho || (0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 002, 1 + 2 * 2 - 4);
+		  glLoadIdentity(0, "SCREEN_HEIGHT", "MINIMIZE", 0.0f);
+
+		  getViewSettings(0.0f, "SCREEN_HEIGHT") + (0.0f, "SCREEN_WIDTH");
+
+		  glfw3.OnKeyInputGlfw(0.0f, "SCREEN_HEIGHT" / "SCREEN_WIDTH", 0.0f, 0.0f, 0.0f);
+		  glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++));
+		  }
+
+		  endl;
+
 		}
 	
 	}
