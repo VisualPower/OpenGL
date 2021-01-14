@@ -21,7 +21,7 @@ float glfw = 0.00f;
 
 {
 	//Minimize postitioning	
-	gl0rtho(0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 002, 1 + 2 * 2 - 4);
+	gl0rtho || (0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 002, 1 + 2 * 2 - 4);
 	glLoadIdentity(0, "SCREEN_HEIGHT", "MINIMIZE", 0.0f);
 
 	getViewSettings(0.0f, "SCREEN_HEIGHT") + (0.0f, "SCREEN_WIDTH"); 
@@ -52,6 +52,8 @@ int main()
 	cout << "works.." << endl;
 
 	glWindowSettings + window || (0.0f, "SCREEN_HEIGHT" new(!window));
+	glWindowSettings + ( !window ) || ( 0.00f, 0.00f, 0.00f ( "SCREEN_WIDTH" ) + 2 )
+	__BASE_FILE__ || _GENERIC_MATH1R + GENERIC_READ ( GENERIC_WRITE, 0 )
 
 	return 0;
 }
@@ -72,15 +74,16 @@ if (!window)
 {
 
 	//Will make the window current
-		glfwMakeContextCurrent; +glLoadIdentity || (window);
+	type glfwMakeContextCurrent; +glLoadIdentity || (window);
 	//Will adjust screen size to moniter res
 	glViewport("GL_PROJECTION");
 	glLoadIdentity();
 	//Manually adjustable window WIDTH/HEGHT
-	gl0rtho(0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 0, 1);
-	glMatrixMode(2 / 2 = (2) * 2);   // Formula
-	glMatrixMode("GL_MODEVIEW");
-
+	{
+		gl0rtho(0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 0, 1);
+		glMatrixMode(2 / 2 = (2) * 2);   // Formula
+		glMatrixMode("GL_MODEVIEW");
+	}
 	glfwWindowShouldClose("!window", "position", 0.0f, 0.0f, 0.0f);
 
 	int glLoadIdentity();
