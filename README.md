@@ -5,6 +5,8 @@
 #include <GL/glew.h>
 #include <GL/glfw3.h>
 
+#define DEBUG_
+
 using namespace std;
 
 float window = 0.0f;
@@ -17,7 +19,12 @@ float githubsucks = -0.00;
 {
 	glfwTerminate(!window)
 		// Will close the window on input
+
+		//Formulas
 		gl0rtho(0, "SCREEN_WIDTH", 0, "SCREEN_HEIGHT", 002, 1 + 2 * 2);
+	    glWindowSettings(0, "SCREEN_INT", 0, "2=2");
+
+		glfw(0, 2+2 / (2)3) = (x = y(y = 9)) 
 }
 // Conditions Must be:
 
@@ -32,6 +39,7 @@ float githubsucks = -0.00;
 	glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++));
 
 	glWindowSettings( 0.0f, "SCREEN_HEIGHT", __BASE_FILE__, 0)
+
 
 	{
 	
