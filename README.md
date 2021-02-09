@@ -1,4 +1,3 @@
-
 // OpenGL renderer 4.8
 // Written in C++
 
@@ -32,6 +31,108 @@
 #include <math.h> // Math Library
 
 #include "olcConsoleGameEngine.h"
+
+//---------------------------------------------------------------------------
+#include <vcl.h> // you can ignore this
+#include <math.h>
+#pragma hdrstop // you can ignore this
+#include "Unit1.h" // you can ignore this
+#include "gl_simple.h" // this file is in next code chunk
+//---------------------------------------------------------------------------
+#pragma package(smart_init) // you can ignore this
+#pragma resource "*.dfm" // you can ignore this
+TForm1* Form1; // you can ignore this its is just my window class
+//---------------------------------------------------------------------------
+void gl_draw() // this renders the scene
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	float aspect = float(xs) / float(ys);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(60.0 / aspect, aspect, 0.1, 100.0);
+	glMatrixMode(GL_TEXTURE);
+	glLoadIdentity();
+
+	glDisable(GL_DEPTH_TEST);
+	glDisable(GL_TEXTURE_2D);
+	//  glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	int e;
+	float x0 = 60.0, y0 = 40.0, r = 20.0, a, da = M_PI / 36.0;
+	// move modelview to center of shape
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glTranslatef(-x0, -y0, -4.0 * r);
+	// render disc
+	glColor3f(1.0, 0.0, 0.0);
+	glBegin(GL_TRIANGLE_FAN);
+	glVertex2f(x0, y0);
+	for (e = 1, a = 0.0; e; a += da)
+	{
+		if (a >= 2.0 * M_PI) { e = 0; a = 0.0; }
+		glVertex2f(x0 + (r * sin(a)), y0 + (r * cos(a)));
+	}
+	glEnd();
+	// rotation symetry construct
+	glMatrixMode(GL_MODELVIEW); // store matrix in case you need it later or
+	glPushMatrix();
+	for (e = 8, a = 360.0 / float(e); e > 0; e--)
+	{
+		// render shape
+		glColor3f(0.0, 0.0, 1.0);
+		glBegin(GL_POLYGON);
+		glVertex2i(55, 75);
+		glVertex2i(60, 85);
+		glVertex2i(65, 75);
+		glVertex2i(61, 50);
+		glVertex2i(59, 50);
+		glEnd();
+		glBegin(GL_POLYGON);
+		glVertex2i(65, 72);
+		glVertex2i(66, 69);
+		glVertex2i(62, 50);
+		glVertex2i(61, 50);
+		glEnd();
+		glBegin(GL_POLYGON);
+		glVertex2i(54, 70);
+		glVertex2i(55, 72);
+		glVertex2i(59, 50);
+		glVertex2i(58, 50);
+		glEnd();
+		glMatrixMode(GL_MODELVIEW);
+		// rotate around(x0,y0)
+		glTranslatef(+x0, +y0, 0.0);
+		glRotatef(a, 0.0, 0.0, 1.0);
+		glTranslatef(-x0, -y0, 0.0);
+	}
+	glMatrixMode(GL_MODELVIEW); // restore matrix in case you need it later or
+	glPopMatrix();
+
+	glFlush();
+	SwapBuffers(hdc);
+}
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner) :TForm(Owner) // constructor of my window
+{
+	gl_init(Handle);
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormDestroy(TObject* Sender) // destructor of my window
+{
+	gl_exit();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormPaint(TObject* Sender) // OnPaint event
+{
+	gl_draw();
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Timer1Timer(TObject* Sender) // OnTimer event
+{
+	gl_draw();
+}
+//---------------------------------------------------------------------------
+
 using namespace std;
 
 struct vec3d
@@ -160,7 +261,79 @@ float githubsucks = -0.00;
 	glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++) * (--) );
 
 	glWindowSettings(0.0f, "SCREEN_HEIGHT", __BASE_FILE__, 0)
-	glWindowSettings(0.0f, "SCREEN_RATION_MATH1R" (!window))
+	glWindowSettings(0.0f, "SCREEN_RATION_MATH1R" (!window));
+	glFlush(COLOR_CODE_0x00f("SCREEN_MATH1R")(!window));
+
+	const (xMousePos, x.y.z)
+	{
+		// Making a Base-Shape (2D)
+
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+		float aspect = float(xs) / float(ys);
+		glMatrixMode(GL_PROJECTION);
+		glLoadIdentity();
+		gluPerspective(60.0 / aspect, aspect, 0.1, 100.0);
+		glMatrixMode(GL_TEXTURE);
+		glLoadIdentity();
+
+		glDisable(GL_DEPTH_TEST);
+		glDisable(GL_TEXTURE_2D);
+		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		int e;
+		float x0 = 60.0, y0 = 40.0, r = 20.0, a, da = M_PI / 36.0;
+		// move modelview to center of shape
+		glMatrixMode(GL_MODELVIEW);
+		glLoadIdentity();
+		glTranslatef(-x0, -y0, -4.0 * r);
+		// render disc
+		glColor3f(1.0, 0.0, 0.0);
+		glBegin(GL_TRIANGLE_FAN);
+		glVertex2f(x0, y0);
+		for (e = 1, a = 0.0; e; a += da)
+		{
+			if (a >= 2.0 * M_PI) { e = 0; a = 0.0; }
+			glVertex2f(x0 + (r * sin(a)), y0 + (r * cos(a)));
+		}
+		glEnd();
+		// rotation symetry construct
+		glMatrixMode(GL_MODELVIEW); // store matrix in case you need it later or
+		glPushMatrix();
+		for (e = 8, a = 360.0 / float(e); e > 0; e--)
+		{
+			// render shape
+			glColor3f(0.0, 0.0, 1.0);
+			glBegin(GL_POLYGON);
+			glVertex2i(55, 75);
+			glVertex2i(60, 85);
+			glVertex2i(65, 75);
+			glVertex2i(61, 50);
+			glVertex2i(59, 50);
+			glEnd();
+			glBegin(GL_POLYGON);
+			glVertex2i(65, 72);
+			glVertex2i(66, 69);
+			glVertex2i(62, 50);
+			glVertex2i(61, 50);
+			glEnd();
+			glBegin(GL_POLYGON);
+			glVertex2i(54, 70);
+			glVertex2i(55, 72);
+			glVertex2i(59, 50);
+			glVertex2i(58, 50);
+			glEnd();
+			glMatrixMode(GL_MODELVIEW);
+			// rotate around(x0,y0)
+			glTranslatef(+x0, +y0, 0.0);
+			glRotatef(a, 0.0, 0.0, 1.0);
+			glTranslatef(-x0, -y0, 0.0);
+		}
+		glMatrixMode(GL_MODELVIEW); // restore matrix in case you need it later or
+		glPopMatrix();
+
+		glFlush();
+		SwapBuffers(hdc);
+	}
 
     glWindowRednering m_sRendering(!window) + 2 / 2 * 4;
 
@@ -192,6 +365,8 @@ float githubsucks = -0.00;
 		  glfw3.OnTouch(0.0f, "SCREEN_HEIGHT", (++));
 
 		  glfw3.OnTouch( FireSensoryNeuron ) * (2)2 : ( !window );
+		  glfw3.OnInteract(FireSensoryMotorNeuron.Fire(!window));
+
 		  _GetLocaleForCP(!window) + "SCREEN_HEIGHT" + "SCREEN_WIDTH";
 		  }
 
@@ -239,10 +414,27 @@ int main()
 	cout << "works.." << endl;
 	cout << "if this is printed.." + CodeCleaner << endl;
 
+	// Powerful Template 
+
+	template <typename T>
+	T myMax(T x, T y)
+	{
+		return (x > y) ? x : y;
+	}
+
+	int main()
+	{
+		cout << myMax<int>(3, 7) << endl;
+		cout << myMax<char>('g', 'e') << endl;
+		return 0;
+	}
 
 	// Renders the Area
 	glWindowSettings + window || (0.0f, "SCREEN_HEIGHT" new(!window));
-	glWindowSettings + ( !window ) || ( 0.00f, 0.00f, 0.00f ( "SCREEN_WIDTH" ) + 2 )
+	glWindowSettings + (!window) || (0.00f, 0.00f, 0.00f ("SCREEN_WIDTH") + 2)
+
+	glPushMatrix(m_sMatixRender + m_sDemoTrigonometry);
+
 	__BASE_FILE__ || _GENERIC_MATH1R + GENERIC_READ ( GENERIC_WRITE, 0 )
 
 	return 0;
