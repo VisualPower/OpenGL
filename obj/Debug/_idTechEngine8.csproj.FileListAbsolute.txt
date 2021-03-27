@@ -1,0 +1,10 @@
+C:\Users\ABN\source\repos\_idTechEngine8\bin\Debug\_idTechEngine8.exe.config
+C:\Users\ABN\source\repos\_idTechEngine8\bin\Debug\_idTechEngine8.exe
+C:\Users\ABN\source\repos\_idTechEngine8\bin\Debug\_idTechEngine8.pdb
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.csprojAssemblyReference.cache
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.Form1.resources
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.Properties.Resources.resources
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.csproj.GenerateResource.cache
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.csproj.CoreCompileInputs.cache
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.exe
+C:\Users\ABN\source\repos\_idTechEngine8\obj\Debug\_idTechEngine8.pdb
