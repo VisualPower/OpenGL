@@ -1,0 +1,2 @@
+C:\Users\ABN\source\repos\ConsoleCppPractice\Debug\ConsoleCppPractice.exe
+C:\Users\ABN\source\repos\ConsoleCppPractice\Debug\ConsoleCppPractice.pdb
