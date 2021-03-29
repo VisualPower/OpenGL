@@ -75,6 +75,7 @@ namespace _idTechEngine8
             this.progressBar7 = new System.Windows.Forms.ProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -510,12 +511,24 @@ namespace _idTechEngine8
             this.button36.UseVisualStyleBackColor = true;
             this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
+            // button37
+            // 
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.Location = new System.Drawing.Point(1173, -4);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(169, 27);
+            this.button37.TabIndex = 45;
+            this.button37.Text = "Wire Frame Nodes";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1572, 858);
+            this.Controls.Add(this.button37);
             this.Controls.Add(this.button36);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.progressBar7);
@@ -617,6 +630,7 @@ namespace _idTechEngine8
         private System.Windows.Forms.ProgressBar progressBar7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button37;
     }
 }
 

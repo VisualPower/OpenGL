@@ -180,7 +180,16 @@ namespace _idTechEngine8
 
         private void button36_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("EXCUTING RENDERING PROCESS"); 
+            MessageBox.Show("EXCUTING RENDERING PROCESS");
+
+            var newForm = new Form2();
+            newForm.Show();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            var newForm = new APIService();
+            newForm.Show();
         }
     }
 }
