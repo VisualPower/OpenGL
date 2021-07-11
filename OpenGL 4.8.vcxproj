@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="RemoteServer.ixx" />
     <ClCompile Include="Replicator.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
@@ -151,7 +152,13 @@
     <ClInclude Include="olcConsoleGameEngine.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\Desktop\BLOCK.png" />
+    <None Include="G:\Delivery #3.prproj" />
+    <None Include="H:\Bliss-v11.14--OFFICIAL-20210508-1013_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso" />
+    <None Include="PropertySheet.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="H:\High level grass art PIxel.png" />
+    <Image Include="H:\PlatformerFloorUnit.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

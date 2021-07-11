@@ -16,6 +16,12 @@
     <Filter Include="Art">
       <UniqueIdentifier>{7a58f69a-2234-458f-8994-cf5a041aa4f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RemoveEvents">
+      <UniqueIdentifier>{d96adb77-1aa4-4d9c-a037-03b2081e7430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Node.js">
+      <UniqueIdentifier>{1394b3de-11b1-48df-95b9-17a9e8edc518}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -23,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="Replicator.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteServer.ixx">
+      <Filter>RemoveEvents</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +55,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\Desktop\BLOCK.png">
+    <None Include="PropertySheet.props" />
+    <None Include="H:\Bliss-v11.14--OFFICIAL-20210508-1013_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso">
+      <Filter>RemoveEvents</Filter>
+    </None>
+    <None Include="G:\Delivery #3.prproj">
+      <Filter>RemoveEvents</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="H:\High level grass art PIxel.png">
+      <Filter>Art</Filter>
+    </Image>
+    <Image Include="H:\PlatformerFloorUnit.png">
       <Filter>Art</Filter>
     </Image>
   </ItemGroup>
