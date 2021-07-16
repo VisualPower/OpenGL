@@ -157,6 +157,7 @@
     <None Include="PropertySheet.props" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\Desktop\GUI.png" />
     <Image Include="H:\High level grass art PIxel.png" />
     <Image Include="H:\PlatformerFloorUnit.png" />
   </ItemGroup>

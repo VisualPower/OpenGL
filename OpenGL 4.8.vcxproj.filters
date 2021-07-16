@@ -22,6 +22,9 @@
     <Filter Include="Node.js">
       <UniqueIdentifier>{1394b3de-11b1-48df-95b9-17a9e8edc518}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Animations">
+      <UniqueIdentifier>{e415f782-b679-40bb-af46-614f184ffe6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -68,6 +71,9 @@
       <Filter>Art</Filter>
     </Image>
     <Image Include="H:\PlatformerFloorUnit.png">
+      <Filter>Art</Filter>
+    </Image>
+    <Image Include="..\..\..\Desktop\GUI.png">
       <Filter>Art</Filter>
     </Image>
   </ItemGroup>
